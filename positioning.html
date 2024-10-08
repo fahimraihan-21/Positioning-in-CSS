@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+
+        box model
+
+    </title>
+<style>
+    .stikey{
+        height: 100px;
+        width: 100px;
+        background-color: bisque;
+        position: sticky;
+    }
+     .relative{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(197, 255, 184);
+        position: relative;
+        margin-top: 20px;
+    }
+     .absolute{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 184, 98);
+        position: absolute;
+        margin-top: 30px;
+    
+    }
+     .fixed{
+        height: 100px;
+        width: 100px;
+        background-color: rgb(104, 177, 255);
+        position: fixed;
+        margin-top: 40px;
+    }
+    .sidebar{
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background-color: black;
+        color: whitesmoke;
+        font-weight: bold;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+.sidebar h2{
+    color: whitesmoke;
+    font-weight: bold;
+}
+.sidebar ul li {
+    margin: 15px 0 ;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+/* article styling section*/
+.article{
+    margin-left: 220px;
+   padding: 20px;
+   width: calc(100%-220px);
+  background-color: rgb(150, 150, 255);
+
+}
+.article h1{
+    color: #333;
+}
+.image-gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 20px;
+
+}
+.image-gallery img{
+    width: 100%;
+    height: auto;
+    border:  2px solid #ddd;
+     border-radius: 5px;
+}
+</style>
+</head>
+
+</head>
+
+<body>
+<h2>
+    positioning css
+</h2>
+<div>
+    Div with no position property
+</div>
+<div class="stikey">
+    Div with stikey  property
+</div>
+<div class="relative">
+    Div with relative property </div>
+    <div class="absolute">
+        Div with absolute property </div>
+        <div class="fixed">
+            Div with fixed property </div>
+            <div class="sidebar">
+            
+                <h2>Sidebar Menu</h2>
+            
+                <ul>
+            
+                    <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+            
+                    <li><a href="#" style="color: white; text-decoration: none;">About</a></li>
+            
+                    <li><a href="#" style="color: white; text-decoration: none;">Services</a></li>
+            
+                    <li><a href="#" style="color: white; text-decoration: none;">Contact</a></li>
+            
+                </ul>
+            
+            </div>
+            <div class="article">
+            
+                <h1>Article Title</h1>
+            
+                <p>This is the main content of the article section. Here, you can include text, images, and other multimedia
+                    elements as part of your content layout.</p>
+            
+                <!-- Image Gallery Section -->
+            
+                <div class="image-gallery">
+            
+                    <img src="https://via.placeholder.com/300x200" alt="Image 1">
+            
+                    <img src="https://via.placeholder.com/300x200" alt="Image 2">
+            
+                    <img src="https://via.placeholder.com/300x200" alt="Image 3">
+            
+                    <img src="https://via.placeholder.com/300x200" alt="Image 4">
+            
+                </div>
+            
+            </div>
+
+</body>
+
+</html>
